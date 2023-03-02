@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 /**
  * main - finds and prints the sum of the even-valued terms
@@ -9,6 +9,7 @@ int main(void)
 {
 	int i;
 	unsigned long int j, k, next, sum;
+
 	j = 1;
 	k = 2;
 	sum = 0;
@@ -23,6 +24,8 @@ int main(void)
 		j = k;
 		k = next;
 	}
+
 	printf("%lu\n", sum);
+
 	return (0);
 }
