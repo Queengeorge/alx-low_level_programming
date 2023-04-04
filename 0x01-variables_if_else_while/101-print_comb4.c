@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - prints all possible different combinations of three digits
- * Return: Always 0 (Success)
+ * main - prints all possible different combinations of three digits values
+ * Return: Always 0 
  */
 int main(void)
 {
