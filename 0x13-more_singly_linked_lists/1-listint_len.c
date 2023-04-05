@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
  * listint_len - returns the number of all the elements in linked list
  * @h: linked list of type listint_t
@@ -6,7 +7,11 @@
 size_t listint_len(const listint_t *h)
 {
 	size_t val = 0;
-	for (const listint_t *present = h; present = present->next; present != NULL)
-		val++;
-	return val;
+
+	while (h)
+	{
+	val++;
+	h = h->next;
+	}
+	return (val);
 }
